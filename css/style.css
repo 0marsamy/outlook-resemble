@@ -1,0 +1,699 @@
+/* Global */
+:root {
+  --blue-color: #0f6cbd;
+  --dark-blue-color: #0c3b5e;
+  --white-smoke-color: #f5f5f5;
+  --white-dareker-color: #f0f0f0f0;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --text-white-color: #ffffff;
+  --text-black-color: #000000;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Start navbar */
+nav {
+  background-color: var(--blue-color);
+  height: 48px;
+  color: var(--white-color);
+}
+
+/* nav .navbar-container-1 {
+} */
+
+nav .dropdown .app-launsher-btn {
+  width: 48px;
+  height: 48px;
+  background-color: var(--blue-color);
+  border: none;
+}
+
+nav .dropdown .app-launsher-btn:hover {
+  background-color: var(--dark-blue-color);
+  transition: 0.3s;
+}
+
+nav .dropdown .dots-menu-white-icon {
+  width: 16px;
+}
+
+nav .dropdown .dots-menu-black-icon {
+  display: none;
+  width: 16px;
+}
+
+nav .app-launsher-btn[aria-expanded="true"] .dots-menu-white-icon {
+  display: none;
+}
+
+nav .app-launsher-btn[aria-expanded="true"] .dots-menu-black-icon {
+  display: block;
+}
+
+nav .app-launsher-btn[aria-expanded="true"].app-launsher-btn {
+  background-color: var(--white-smoke-color);
+}
+
+nav .dropdown-menu.bg-color {
+  background-color: var(--white-color);
+}
+nav .dropdown-menu .dropdown-menu-container {
+  width: 550px;
+}
+
+nav .dropdown-menu .app-launsher-search {
+  width: 100%;
+  background-color: var(--white-smoke-color);
+  border: transparent;
+  color: var(--text-black-color);
+}
+nav .dropdown-menu .app-launsher-search:focus {
+  outline: transparent;
+}
+nav .dropdown-menu .app-launsher-search:hover {
+  border-bottom: 1px solid var(--dark-blue-color);
+}
+
+nav .dropdown-menu i {
+  top: 50%;
+  left: 2%;
+  color: var(--blue-color);
+}
+
+nav .dropdown-menu .dropdown-menu-container ul li a {
+  width: 102px;
+  height: 95px;
+  padding: 8px 4px 8px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  color: var(--text-black-color);
+}
+
+nav .dropdown-menu .dropdown-menu-container ul li a:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+nav .dropdown-menu .dropdown-menu-container ul li img {
+  width: 32px;
+  height: 40px;
+}
+
+nav .logo {
+  width: 10%;
+}
+
+nav .logo a {
+  color: white;
+  width: fit-content;
+}
+
+nav .search-bar-box .search-bar-form select {
+  max-width: 150px;
+  height: 32px;
+  border: transparent;
+  visibility: hidden;
+  font-size: 14px;
+  border-radius: 2px 0px 0px 2px;
+  outline: var(--blue-color);
+  cursor: pointer;
+}
+
+nav .search-bar-box .search-bar-form input {
+  font-size: 14px;
+  width: 350px;
+  height: 32px;
+  border: transparent;
+  padding: 0 30px 0 30px;
+  border-radius: 4px;
+}
+
+nav .search-bar-box .search-bar-form i {
+  color: black;
+  opacity: 0.5;
+  font-size: 14px;
+}
+nav .search-bar-box .search-bar-form i.magnifying-glass-icon {
+  top: 50%;
+  left: 2%;
+  translate: -25% -45%;
+}
+
+nav .search-bar-box .search-bar-form:focus-within input {
+  width: 100%;
+  outline: none;
+  border-radius: 0px 0px 0px 0px;
+}
+
+nav .search-bar-box .search-bar-form:focus-within select {
+  visibility: visible;
+}
+
+nav .search-bar-box .search-bar-form:focus input {
+  width: 100%;
+  outline: none;
+  border-radius: 0px 0px 0px 0px;
+}
+
+nav .search-bar-box .search-bar-form:focus select {
+  visibility: visible;
+}
+
+nav .navbar-nav-set {
+  color: var(--white-color);
+  font-size: 14px;
+}
+
+nav .navbar-nav-set a {
+  color: white;
+  font-size: 14px;
+  background-color: var(--blue-color);
+  min-width: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+nav .navbar-nav-set a:hover {
+  background-color: var(--dark-blue-color);
+}
+
+nav .navbar-nav-set .acc-icon div {
+  width: 35px;
+  height: 35px;
+}
+
+nav .dropdown.navbar-nav-dropdown {
+  display: none;
+}
+
+nav .dropdown-menu.navbar-nav-dropdown-menu i,
+nav .dropdown-menu.navbar-nav-dropdown-menu a {
+  color: var(--text-black-color);
+  background-color: transparent;
+  padding: 9px;
+  display: none;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+nav .dropdown-menu.navbar-nav-dropdown-menu {
+  background-color: var(--white-color);
+}
+
+nav .dropdown-menu.navbar-nav-dropdown-menu a:hover {
+  background-color: var(--white-smoke-color);
+}
+
+nav .dropdown-menu.acc-dropdown-menu {
+  width: 320px;
+  /* height: 132px; */
+  padding: 0;
+  background-color: var(--white-color);
+}
+
+nav .dropdown-menu.acc-dropdown-menu img {
+  width: 25px;
+  height: 25px;
+}
+
+nav .dropdown-menu.acc-dropdown-menu a {
+  background-color: transparent;
+  color: var(--black-color);
+  width: 75px;
+  height: 45px;
+}
+
+nav .dropdown-menu.acc-dropdown-menu a:hover {
+  background-color: var(--white-smoke-color);
+}
+
+nav .dropdown-menu.acc-dropdown-menu .acc-picture-box {
+  width: 150px;
+}
+
+nav .dropdown-menu.acc-dropdown-menu .acc-picture-box .acc-picture {
+  width: 70px;
+  height: 70px;
+  font-size: 25px;
+  color: var(--text-black-color);
+}
+
+nav .dropdown-menu.acc-dropdown-menu .acc-data-text h5 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-black-color);
+}
+
+nav .dropdown-menu.acc-dropdown-menu .acc-data-text h6 {
+  font-size: 13px;
+  color: var(--text-black-color);
+}
+
+nav .dropdown-menu.acc-dropdown-menu .acc-data-text a {
+  width: fit-content;
+  height: fit-content;
+  text-decoration: underline;
+  color: var(--blue-color);
+  font-size: 13px;
+}
+
+nav .dropdown-menu.acc-dropdown-menu .acc-data-text a:hover {
+  background-color: transparent;
+}
+
+nav .navbar-nav-set .magnifying-glass {
+  display: none;
+  justify-content: center;
+}
+
+/* Start modal */
+nav .navbar-container-2 .modal-dialog.modal-width {
+  max-width: 95%;
+}
+nav .navbar-container-2 .modal .modal-body .sec-container {
+  color: var(--black-color);
+  display: flex;
+  height: 90vh;
+}
+nav .navbar-container-2 .modal .modal-body .sec-1 {
+  width: 20%;
+  background-color: var(--white-smoke-color);
+  padding: 15px;
+}
+nav .navbar-container-2 .modal .modal-body .sec-2 .sec-2-body button,
+nav .navbar-container-2 .modal .modal-body .sec-1 .sec-1-body button {
+  background-color: transparent;
+  border: transparent;
+  position: relative;
+  color: var(--text-black-color);
+}
+nav
+  .navbar-container-2
+  .modal
+  .modal-body
+  .sec-2
+  .sec-2-body
+  button:hover::before,
+nav
+  .navbar-container-2
+  .modal
+  .modal-body
+  .sec-1
+  .sec-1-body
+  button:hover::before {
+  content: "";
+  width: 1%;
+  height: 100%;
+  background-color: gray;
+  position: absolute;
+  top: 0;
+  left: -5px;
+}
+nav
+  .navbar-container-2
+  .modal
+  .modal-body
+  .sec-2
+  .sec-2-body
+  button.active::before,
+nav
+  .navbar-container-2
+  .modal
+  .modal-body
+  .sec-1
+  .sec-1-body
+  button.active::before {
+  content: "";
+  width: 1%;
+  height: 100%;
+  background-color: var(--blue-color);
+  position: absolute;
+  top: 0;
+  left: -5px;
+}
+nav .navbar-container-2 .modal .modal-body .sec-2 {
+  width: 20%;
+  padding: 15px;
+  background-color: var(--white-smoke-color);
+}
+nav .navbar-container-2 .modal .modal-body .sec-3 {
+  width: 60%;
+  padding: 15px;
+  background-color: var(--white-smoke-color);
+}
+/* End modal */
+/* End navbar */
+/* Star sid navbar */
+main {
+  height: calc(100vh - 48px);
+  display: flex;
+  background-color: var(--white-smoke-color);
+}
+main section {
+  max-width: 95%;
+  padding-left: 1%;
+}
+main .microsoft-apps-navbar {
+  width: 48px;
+  background-color: var(--white-dareker-color);
+  height: 100%;
+  box-shadow: 1px 0px 1px 0 rgb(0 0 0 / 6%);
+}
+main .microsoft-apps-navbar-nav img {
+  width: 22px;
+  height: 22px;
+}
+main .microsoft-apps-navbar-nav img {
+  width: 22px;
+  height: 22px;
+}
+main .microsoft-apps-navbar-nav a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+main .microsoft-apps-navbar-nav a.active::before {
+  content: "";
+  height: 100%;
+  width: 5%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--blue-color);
+}
+
+main .microsoft-apps-navbar-nav a:hover {
+  background-color: var(--white-color);
+}
+/* End sid navbar */
+/* Start secondary navbar  */
+main section .secondary-navbar {
+  height: 36px;
+}
+
+main section .secondary-navbar button {
+  background-color: transparent;
+  border: transparent;
+  color: var(--black-color);
+  font-size: 14px;
+  width: 60px;
+  height: 100%;
+  padding: 0 5px 0 5px;
+  position: relative;
+}
+
+main section .secondary-navbar button:hover {
+  font-weight: 600;
+  background-color: var(--white-dareker-color);
+}
+
+main section .secondary-navbar button.active::after {
+  content: "";
+  width: 70%;
+  height: 10%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--blue-color);
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+main section .secondary-navbar button:hover.active::after {
+  content: "";
+  width: 100%;
+  transition: 0.5s;
+}
+
+main section .panel {
+  height: 40px;
+  background-color: var(--white-color);
+  box-shadow: 0px 0 2px 1px rgb(0 0 0 / 14%);
+  border-radius: 5px;
+}
+main section .panel .panel-btns-1 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+main section .panel .panel-btns-2 {
+  height: 100%;
+  display: none;
+  align-items: center;
+}
+main section .panel .panel-btns-3 {
+  height: 100%;
+  display: none;
+  align-items: center;
+}
+main section .panel .panel-btns-3 button,
+main section .panel .panel-btns-2 button,
+main section .panel .panel-btns-1 button {
+  background-color: transparent;
+  color: var(--black-color);
+  border: transparent;
+  height: 32px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+main section .panel .panel-btns-3 button:hover,
+main section .panel .panel-btns-2 button:hover,
+main section .panel .panel-btns-1 button:hover {
+  background-color: var(--white-dareker-color);
+}
+main section .panel .panel-btns-1 button.mail-btn {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  border: transparent;
+  height: 32px;
+  font-size: 14px;
+}
+/* End secondary navbar  */
+/* start mail boxs  */
+main section .mail-container .mail-btns {
+  width: 17%;
+  color: var(--text-black-color);
+}
+main section .mail-container .mail-btns button {
+  color: var(--text-black-color);
+}
+
+main section .mail-container .mail-btns .Folders-btns,
+main section .mail-container .mail-btns .Favourites-btns {
+  font-size: 14px;
+}
+main section .mail-container .mail-btns .Folders-btns button,
+main section .mail-container .mail-btns .Favourites-btns button {
+  padding: 10px;
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+}
+main section .mail-container .mail-btns .Folders-btns button.active,
+main section .mail-container .mail-btns .Favourites-btns button.active {
+  background-color: #1079d574;
+}
+main section .mail-container .mail-btns .Folders-btns button:hover,
+main section .mail-container .mail-btns .Favourites-btns button:hover {
+  background-color: rgb(197, 197, 197);
+}
+main section .mail-container .mail-btns .Folders-btns button div,
+main section .mail-container .mail-btns .Favourites-btns button div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+main section .mail-container i {
+  font-size: 12px;
+  opacity: 50%;
+  transition: 0.3s;
+}
+
+main section .mail-container .mail-boxs {
+  width: 23%;
+  background-color: var(--white-color);
+}
+main section .mail-container .mail-boxs .mail-boxs-sec1 {
+  padding-left: 64px;
+  box-shadow: 0 0 1px 0 #00000045;
+}
+main section .mail-container .mail-boxs .mail-boxs-sec1 button {
+  background-color: transparent;
+  border: transparent;
+  position: relative;
+  color: var(--text-black-color);
+}
+main section .mail-container .mail-boxs .mail-boxs-sec1 button.active::after {
+  content: "";
+  width: 70%;
+  height: 10%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--blue-color);
+  border-radius: 4px;
+  transition: 0.5s;
+}
+main
+  section
+  .mail-container
+  .mail-boxs
+  .mail-boxs-sec1
+  button:hover.active::after {
+  width: 100%;
+}
+main section .mail-container .mail-boxs .mail-boxs-sec2 {
+}
+main section .mail-container .mail-boxs .mail-box {
+  padding-left: 30px;
+  box-shadow: 0 0 1px 0 #00000045;
+  cursor: pointer;
+  color: var(--text-black-color);
+}
+main section .mail-container .mail-boxs .mail-box:hover {
+  background-color: #0f6cbd3f;
+}
+
+main section .mail-container .mail-show {
+  width: 60%;
+}
+
+/* End mail boxs  */
+@media (max-width: 1160px) {
+  nav .dropdown.navbar-nav-dropdown {
+    display: block;
+  }
+  nav .navbar-nav-set a.lightbulb-icon {
+    display: none;
+  }
+  nav .navbar-nav-set a.gear-icon {
+    display: none;
+  }
+  nav .dropdown-menu.navbar-nav-dropdown-menu i.lightbulb-icon,
+  nav .dropdown-menu.navbar-nav-dropdown-menu a.lightbulb-icon {
+    display: flex;
+  }
+  nav .dropdown-menu.navbar-nav-dropdown-menu i.gear-icon,
+  nav .dropdown-menu.navbar-nav-dropdown-menu a.gear-icon {
+    display: flex;
+  }
+}
+
+@media (max-width: 1100px) {
+  nav .navbar-nav-set a.bell-icon {
+    display: none;
+  }
+  nav .dropdown-menu.navbar-nav-dropdown-menu i.bell-icon,
+  nav .dropdown-menu.navbar-nav-dropdown-menu a.bell-icon {
+    display: flex;
+  }
+}
+
+@media (max-width: 1040px) {
+  nav .navbar-nav-set a.calendar-icon {
+    display: none;
+  }
+  nav .dropdown-menu.navbar-nav-dropdown-menu i.calendar-icon,
+  nav .dropdown-menu.navbar-nav-dropdown-menu a.calendar-icon {
+    display: flex;
+  }
+}
+
+@media (max-width: 980px) {
+  nav .navbar-nav-set a.OneNote-icon {
+    display: none;
+  }
+  nav .dropdown-menu.navbar-nav-dropdown-menu i.OneNote-icon,
+  nav .dropdown-menu.navbar-nav-dropdown-menu a.OneNote-icon {
+    display: flex;
+  }
+}
+
+@media (max-width: 920px) {
+  nav .navbar-nav-set a.teems-icon {
+    display: none;
+  }
+  nav .dropdown-menu.navbar-nav-dropdown-menu i.teems-icon,
+  nav .dropdown-menu.navbar-nav-dropdown-menu a.teems-icon {
+    display: flex;
+  }
+
+  main section .mail-container {
+    flex-direction: column;
+  }
+  main section .mail-container .mail-btns {
+    width: 100%;
+  }
+  main section .mail-container .mail-boxs {
+    width: 100%;
+  }
+  main section .mail-container .mail-show {
+    width: 100%;
+  }
+}
+
+@media (max-width: 880px) {
+  nav .navbar-nav-set a.meet-icon {
+    display: none;
+  }
+  nav .dropdown-menu.navbar-nav-dropdown-menu i.meet-icon,
+  nav .dropdown-menu.navbar-nav-dropdown-menu a.meet-icon {
+    display: flex;
+  }
+}
+@media (max-width: 760px) {
+  nav .navbar-nav-set .magnifying-glass {
+    display: flex;
+  }
+  #search-bar-box {
+    display: none;
+  }
+  nav .navbar-container-2 .modal .modal-body .sec-container {
+    flex-direction: column;
+  }
+  nav .navbar-container-2 .modal .modal-body .sec-1 {
+    width: 100%;
+  }
+  nav .navbar-container-2 .modal .modal-body .sec-2 {
+    width: 100%;
+  }
+  nav .navbar-container-2 .modal .modal-body .sec-3 {
+    width: 100%;
+    height: 100%;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 552px) {
+  nav .dropdown-menu .dropdown-menu-container {
+    width: 450px;
+  }
+}
+
+@media (max-width: 452px) {
+  nav .dropdown-menu .dropdown-menu-container {
+    width: 350px;
+  }
+  main section .panel .panel-btns-3 button span,
+  main section .panel .panel-btns-2 button span,
+  main section .panel .panel-btns-1 button span {
+    display: none;
+  }
+}
